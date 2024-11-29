@@ -30,3 +30,13 @@ To delete files that are not tracked by Git (i.e., new files that haven't been c
 
 ### **Warning:**
 These commands are **destructive** and **cannot be undone**. Ensure you do not need the changes or new files before running them.
+
+
+
+
+### Current Video :
+
+03 - Options API vs Composition API - Switching Over
+
+- Options API Design
+
