@@ -8,49 +8,20 @@
   </div>
 </template>
 
-<!-- first type of composition API code to write script -->
+<script setup>
+import {ref} from "vue";
 
-<script>
+const counter = ref(0)
 
-import {ref} from 'vue'
-
-export default {
-  setup() {
-    const counter = ref(0)
-
-    function increaseCounter() {
-      counter.value++;
-    }
-
-    function decreaseCounter() {
-      counter.value--;
-    }
-
-    return {
-      counter, increaseCounter, decreaseCounter
-    }
-
-  }
+const increaseCounter = () => {
+  counter.value++
 }
-</script>
 
-<!--<script>-->
-<!--export default {-->
-<!--  data() {-->
-<!--    return {-->
-<!--      counter: 0-->
-<!--    }-->
-<!--  },-->
-<!--  methods: {-->
-<!--    increaseCounter() {-->
-<!--      this.counter++;-->
-<!--    },-->
-<!--    decreaseCounter() {-->
-<!--      this.counter&#45;&#45;;-->
-<!--    }-->
-<!--  }-->
-<!--}-->
-<!--</script>-->
+const decreaseCounter = () => {
+  counter.value--
+}
+
+</script>
 
 <style>
 .home {
