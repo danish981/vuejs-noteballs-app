@@ -38,7 +38,7 @@ running them.
 
 ### Current Video :
 
-04 : Refs, reactive objects and non-reactive objects
+05 : Methods, computed and watch
 
-- non reactive data property
+- parameters to the methdos
 
