@@ -40,5 +40,5 @@ running them.
 
 04 : Refs, reactive objects and non-reactive objects
 
-- reacive objects
+- non reactive data property
 
