@@ -40,5 +40,5 @@ running them.
 
 04 : Refs, reactive objects and non-reactive objects
 
-- two way data binding
+- reacive objects
 
