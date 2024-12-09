@@ -40,5 +40,5 @@ running them.
 
 05 : Methods, computed and watch
 
-- parameters to the methdos
+- computer property
 

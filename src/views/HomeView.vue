@@ -1,7 +1,7 @@
 <template>
   <div class="home">
 
-    <h2>{{ myAppTitle }}</h2>
+    <h2>{{ oddOrEven }}</h2>
 
     <h3>{{ counterData.title }}</h3>
 
@@ -21,9 +21,7 @@
 </template>
 
 <script setup>
-import {reactive} from "vue";
-
-const myAppTitle = 'My Amazin application'
+import {computed, reactive} from "vue";
 
 const counterData = reactive({
   count: 0,
@@ -38,6 +36,10 @@ const increaseCounter = (amount, e) => {
 const decreaseCounter = (amount) => {
   counterData.count -= amount
 }
+
+const oddOrEven = computed(() => {
+  return (counterData.count % 2 === 0) ? 'even' : 'odd'
+})
 
 </script>
 
