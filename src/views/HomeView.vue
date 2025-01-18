@@ -13,13 +13,13 @@
     </div>
 
     <div class="edit">
-      <input v-model="counterData.title" type="text" placeholder="Enter counter title"/>
+      <input v-model="counterData.title" type="text" placeholder="Enter counter title" />
     </div>
   </div>
 </template>
 
 <script setup>
-import {computed, reactive} from "vue";
+import { computed, reactive } from "vue";
 
 const counterData = reactive({
   count: 0,
@@ -85,7 +85,8 @@ body {
   background-color: #007BFF;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s; /* Added transform for effect */
+  transition: background-color 0.3s, transform 0.2s;
+  /* Added transform for effect */
 }
 
 .btn:hover {
@@ -93,11 +94,13 @@ body {
 }
 
 .btn-decrease:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge on hover */
 }
 
 .btn-increase:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge on hover */
 }
 
 .counter {
@@ -108,7 +111,8 @@ body {
   color: #007BFF;
   background-color: #e7f3ff;
   border: 2px solid #007BFF;
-  box-shadow: inset -2px -2px rgba(255, 255, 255, 0.5), inset -4px -4px rgba(255, 255, 255, 0.3); /* Inner shadow for depth */
+  box-shadow: inset -2px -2px rgba(255, 255, 255, 0.5), inset -4px -4px rgba(255, 255, 255, 0.3);
+  /* Inner shadow for depth */
 }
 
 .edit {
@@ -122,19 +126,23 @@ body {
   width: 100%;
   max-width: 300px;
   border: none;
-  box-shadow: 0px -2px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(255, 255, 255, 0.5); /* Inner shadow for depth */
+  box-shadow: 0 -2px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(255, 255, 255, 0.5);
+  /* Inner shadow for depth */
   transition: border-color .3s;
 }
 
 .edit input::placeholder {
-  color: #aaa; /* Placeholder color */
+  color: #aaa;
+  /* Placeholder color */
 }
 
 .edit input:hover,
 .edit input:focus {
   outline: none;
-  box-shadow: none; /* Remove shadow on focus */
+  box-shadow: none;
+  /* Remove shadow on focus */
   border-bottom: gray;
-  border-color: #007BFF; /* Add underline on focus */
+  border-color: #007BFF;
+  /* Add underline on focus */
 }
 </style>
