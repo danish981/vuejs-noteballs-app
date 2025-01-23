@@ -39,6 +39,7 @@ const oddOrEven = computed(() => {
   return (counterData.count % 2 === 0) ? 'Even' : 'Odd';
 });
 
+
 </script>
 
 <style>
