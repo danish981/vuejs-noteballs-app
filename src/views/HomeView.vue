@@ -27,7 +27,6 @@ const counterData = reactive({
 });
 
 const increaseCounter = (amount, e) => {
-  console.log(e);
   counterData.count += amount;
 };
 
